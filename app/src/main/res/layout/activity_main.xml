@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        android:text="BMI Calculator"
+        android:textSize="30sp"
+        android:textColor="#C81B1B"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/group"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+
+        <RadioButton
+            android:textSize="22sp"
+            android:text="male"
+            android:layout_weight ="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:textSize="22sp"
+            android:layout_weight="0.5"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <EditText
+
+        android:inputType="numberDecimal"
+        android:id="@+id/hieght"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:hint="Please Enter weight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/wight"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:hint="Please Enter H.."
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <Button
+
+        android:id="@+id/submit"
+        android:layout_marginTop="40dp"
+        android:text="Submit"
+        android:background="@color/purple_700"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="40dp"/>
+
+
+    <TextView
+        android:id="@+id/res2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:layout_gravity="center"
+        android:text="Bmi Values  "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_marginTop="40dp"
+        android:text="Clear"
+        android:background="@color/design_default_color_error"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="40dp"/>
+
+
+
+</LinearLayout>
